@@ -42,7 +42,7 @@ public:
         page_mask = ~(page_size - 1);
     }
 
-    ~LockedPageManagerBase()
+    LockedPageManagerBase()
     {
         assert(this->GetLockedPageCount() == 0);
     }
